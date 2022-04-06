@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    color: white;
+    background-color: black;
+}
+
+header{
+    background-color: crimson;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: none;
+}
