@@ -1,5 +1,5 @@
 import express from "express";
-import { routes } from "./src/routes.js";
+import { routes } from './src/routes/routes.js'
 import path from "path";
 
 const port = 3002;

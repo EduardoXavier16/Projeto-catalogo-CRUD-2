@@ -7,7 +7,7 @@ export const variados = connection.define(
     id: {
       type: sequelize.INTEGER,
       allowNull: false,
-      primaryKry: true,
+      primaryKey: true,
       autoIncrement: true,
     },
     nome: {
