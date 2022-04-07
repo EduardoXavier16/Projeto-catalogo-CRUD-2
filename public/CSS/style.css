@@ -25,11 +25,17 @@ ul{
 }
 
 .card{
-    border: 1px solid red;
+    margin-top: 40px;
+    border: 2px solid rgb(220, 20, 60);
     width: 332px;
     height: 445px;
 }
 
 main{
     margin-top: 16px;
+}
+
+img{
+    width: 332px;
+    height: 445px; 
 }

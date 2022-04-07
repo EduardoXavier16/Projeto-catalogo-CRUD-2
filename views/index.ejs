@@ -10,18 +10,18 @@
 <body>
     
     <%- include('./partials/header.ejs') %>
-    
+
    <main>
-    <% filmes.forEach(element => { %>
-        <div class="card">
-            <div class="img-card">
-                <img src="<%= element.img %> "> 
+        <% filmes.forEach(element => { %>
+            <div class="card">
+                <div class="img-card">
+                    <img src="<%= element.img %> "> 
+                </div>
+                <div class="text-card">
+                    <%= element.nome %> 
+                </div>
             </div>
-            <div class="text-card">
-                <%= element.nome %> 
-            </div>
-        </div>
-       <% }) %>
+        <% }) %>
    </main>
    
 </body>
