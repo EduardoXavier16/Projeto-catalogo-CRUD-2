@@ -2,7 +2,9 @@ import { variados } from "../model/filme.js";
 
 export const getIndex = async (req, res) => {
   try {
-    const filmes = await variados.findAll();
+    const filmes = await variados.findAll({
+      order: [["nome", "ASC"]],
+    });
     res.render("index.ejs", {
       filmes,
     });
@@ -13,11 +15,11 @@ export const getIndex = async (req, res) => {
 
 export const getDetalhes = async (req, res) => {
   try {
-    const filme = await variados.findByPK(res.params.id);
+    const filme = await variados.findByPK(req.params.id);
     res.render("detalhes.ejs", {
-      filme
+      filme,
     });
-  } catch (error) {
+  } catch (err) {
     res.send(err.mensage);
   }
 };
