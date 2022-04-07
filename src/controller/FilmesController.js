@@ -7,6 +7,6 @@ export const getIndex = async (req, res) => {
       filmes
     });
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
 };
