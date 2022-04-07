@@ -1,7 +1,9 @@
-import express from 'express';
+import express from "express";
 
-import { getIndex } from '../controller/FilmesController.js';
+import { getIndex, getDetalhes } from "../controller/FilmesController.js";
 
 export const routes = express.Router();
 
 routes.get("/Home", getIndex);
+
+routes.get("/Detalhes/:id", getDetalhes);
